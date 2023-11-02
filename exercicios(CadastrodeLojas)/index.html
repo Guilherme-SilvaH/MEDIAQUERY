@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Loja</title>
+    <link rel="stylesheet" type="text/css" href="/exercicios(CadastrodeLojas)/style.css">
+<style>
+
+    html { 
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+    <header id="headercontainer">
+        <h1 id="headerCadastro"> Cadastre aqui sua Loja</h1>
+        <h3> Preencha as seguintes informaçoes: </h3>
+    </header>
+
+    <form id="formcontainer" action="api.flit.com.br/submeterDados" method="POST">
+        <div id="NomeCont">
+            <label for="nometext" id="form" name="Nome">Nome</label>
+            <input  id="inputs"  type="text" placeholder="Digite seu Nome aqui">
+        </div>
+
+        <div id="endereçoCont">
+            <label for="endereçoinput">Endereço</label>
+            <input id="inputs"  type="text" placeholder="Digite seu Endereço aqui">
+        </div>
+
+        <div id="funcionamentoCont">
+            <p>Dias da semana que há funcionamento:</p>
+            <input type="checkbox" id="segunda" name="dias" value="Segunda-feira">
+            <label for="segunda">Segunda-feira</label>
+
+            <input type="checkbox" id="terca" name="dias" value="Terça-feira">
+            <label for="terca">Terça-feira</label>
+
+            <input type="checkbox" id="quarta" name="dias" value="Quarta-feira">
+            <label for="quarta">Quarta-feira</label>
+
+            <input type="checkbox" id="quinta" name="dias" value="Quinta-feira">
+            <label for="quinta">Quinta-feira</label>
+
+            <input type="checkbox" id="sexta" name="dias" value="Sexta-feira">
+            <label for="sexta">Sexta-feira</label>
+
+            <input type="checkbox" id="sabado" name="dias" value="Sábado">
+            <label for="sabado">Sábado</label>
+
+            <input type="checkbox" id="domingo" name="dias" value="Domingo">
+            <label for="domingo">Domingo</label>
+        </div>
+
+        <div id="aberturaEfechamento">
+            
+           
+            <label for="abertura"> Abertura </label>
+            <input type="time"  id="inputs" name="Horario">
+
+            <label for="fechamento"> Fechamento </label>
+            <input type="time"  id="inputs" name="Horario">
+           
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+        </div>
+    </form>
+
+    <script src="/exercicios(CadastrodeLojas)/script.js">
+
+
+    </script>
+</body>
+</html>

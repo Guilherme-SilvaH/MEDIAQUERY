@@ -1,0 +1,85 @@
+
+#headercontainer{
+    text-align: center;
+    margin: 20px;
+ 
+}
+
+#headerCadastro{
+    margin: 30px;
+    background-color: rgba(211, 205, 205, 0.759)
+}
+
+#formcontainer{
+    width: 100%; /* Ajustar a largura ao conteúdo */
+    max-width: 900px; /* Limitar a largura máxima para 900px */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#inputs, input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+#aberturacontainer{
+    display: block;
+
+} 
+
+
+  /* Estilizando as caixas de seleção */
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+ 
+
+  /* Estilizando o rótulo do dia da semana */
+  label[for^="segunda"], label[for^="terca"], label[for^="quarta"], label[for^="quinta"], label[for^="sexta"], label[for^="sabado"], label[for^="domingo"] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 5px;
+
+  }
+  
+
+  /* Estilizando os campos de horário de funcionamento */
+  input[type="time"] {
+    display: inline-block;
+    
+  }
+
+  label[for^="abertura"],[for^="fechamento"]{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+   
+  }
+
+  
+  
+  /* Estilizando o botão de envio */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Adicionando estilo aos rótulos do botão de envio */
+  label[for="enviar"] {
+    display: block;
+    margin-top: 20px;
+  }
+
